@@ -118,7 +118,23 @@ if (skillsSection) {
 function handleSubmit(e) {
     e.preventDefault();
     
-    // Show toast notification
+    // Get form values
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    // Create email body
+    const emailBody = `Name: ${firstName} ${lastName}\nEmail: ${email}\n\nMessage:\n${message}`;
+    
+    // Create Gmail compose URL
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=jaceaysonr@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+    
+    // Open Gmail in new tab
+    window.open(gmailUrl, '_blank');
+    
+    // Show success message
     const toast = document.getElementById('toast');
     toast.classList.remove('translate-y-20', 'opacity-0');
     
@@ -156,3 +172,83 @@ if (heroText) {
         heroText.style.opacity = '1';
     }, 100);
 }
+
+
+// LB Portal Modal Functions
+function openLbModal() {
+    const modal = document.getElementById('lbModal');
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    // Reinitialize Lucide icons for modal content
+    setTimeout(() => lucide.createIcons(), 100);
+}
+
+function closeLbModal(event) {
+    // Only close if clicking the backdrop or close button
+    if (!event || event.target.id === 'lbModal' || event.target.closest('button')) {
+        const modal = document.getElementById('lbModal');
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// AIDE Modal Functions
+function openAideModal() {
+    const modal = document.getElementById('aideModal');
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    // Reinitialize Lucide icons for modal content
+    setTimeout(() => lucide.createIcons(), 100);
+}
+
+function closeAideModal(event) {
+    // Only close if clicking the backdrop or close button
+    if (!event || event.target.id === 'aideModal' || event.target.closest('button')) {
+        const modal = document.getElementById('aideModal');
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// ALP Modal Functions
+function openAlpModal() {
+    const modal = document.getElementById('alpModal');
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    // Reinitialize Lucide icons for modal content
+    setTimeout(() => lucide.createIcons(), 100);
+}
+
+function closeAlpModal(event) {
+    // Only close if clicking the backdrop or close button
+    if (!event || event.target.id === 'alpModal' || event.target.closest('button')) {
+        const modal = document.getElementById('alpModal');
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Image Zoom Modal Functions
+function openImageModal(imageSrc) {
+    const modal = document.getElementById('imageModal');
+    const img = document.getElementById('zoomedImage');
+    img.src = imageSrc;
+    modal.classList.remove('hidden');
+    // Reinitialize Lucide icons
+    setTimeout(() => lucide.createIcons(), 100);
+}
+
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    modal.classList.add('hidden');
+}
+
+// Close modals with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeLbModal();
+        closeAideModal();
+        closeAlpModal();
+        closeImageModal();
+    }
+});

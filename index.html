@@ -125,7 +125,7 @@
                 <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                     Hi, I'm <span class="gradient-text">Athriel Rivera</span>
                     <br>
-                    <span class="text-gray-900 dark:text-white">Full Stack Developer</span>
+                    <span class="text-gray-900 dark:text-white">Aspiring Full Stack Developer</span>
                 </h1>
                 <p class="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-lg">
                     I build exceptional digital experiences with modern web technologies. Passionate about creating elegant solutions to complex problems.
@@ -204,7 +204,7 @@
                        
                     </p>
                     
-                    <a href="#" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium mt-4 group">
+                    <a href="Jace Resume.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium mt-4 group">
                         Download CV
                         <i data-lucide="download" class="w-4 h-4 transform group-hover:translate-y-1 transition-transform"></i>
                     </a>
@@ -232,168 +232,102 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: Liquidation Bot Portal -->
                 <div class="project-card group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300" data-category="web">
                     <div class="relative overflow-hidden h-48">
-                        <img src="http://static.photos/technology/640x360/1" alt="E-Commerce Platform" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        <img src="https://www.investopedia.com/thmb/xaiVH7XA-ORSxWAH9nu9tcL0Ojg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1005470094-0b560f58af7c45508be54d84801860b7.jpg" alt="Liquidation Bot Portal" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
                         <div class="project-overlay absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 flex items-center justify-center gap-4">
-                            <a href="#" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors">
+                            <button onclick="openLbModal()" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors" title="View Details">
+                                <i data-lucide="eye" class="w-5 h-5"></i>
+                            </button>
+                            <a href="https://liquidation-bot-portal.onrender.com/" target="_blank" rel="noopener noreferrer" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors" title="Live Demo">
                                 <i data-lucide="external-link" class="w-5 h-5"></i>
                             </a>
-                            <a href="#" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors">
+                            <a href="https://github.com/jacerivera07/Liquidation-Bot-Portal" target="_blank" rel="noopener noreferrer" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors" title="View Code">
                                 <i data-lucide="github" class="w-5 h-5"></i>
                             </a>
                         </div>
                     </div>
                     <div class="p-6">
                         <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">React</span>
-                            <span class="px-3 py-1 text-xs font-medium bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full">Node.js</span>
+                            <span class="px-3 py-1 text-xs font-medium bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full">Django</span>
+                            <span class="px-3 py-1 text-xs font-medium bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full">Python</span>
+                            <span class="px-3 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">AI/ML</span>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">E-Commerce Platform</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">A full-featured online shopping platform with payment integration and admin dashboard.</p>
-                        <a href="#" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm group/link">
-                            View Project <i data-lucide="arrow-up-right" class="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"></i>
-                        </a>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Liquidation Bot Portal</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Django web app for managing liquidation and reimbursement requests with AI-powered receipt processing using Gemma 3 4B vision model.</p>
+                        <div class="flex gap-3">
+                            <button onclick="openLbModal()" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm group/link">
+                                View Details <i data-lucide="arrow-up-right" class="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"></i>
+                            </button>
+                            <a href="https://liquidation-bot-portal.onrender.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-medium text-sm group/link">
+                                Live Demo <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300" data-category="mobile">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="http://static.photos/app/640x360/2" alt="Task Management App" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="project-overlay absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 flex items-center justify-center gap-4">
-                            <a href="#" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors">
-                                <i data-lucide="external-link" class="w-5 h-5"></i>
-                            </a>
-                            <a href="#" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors">
-                                <i data-lucide="github" class="w-5 h-5"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 text-xs font-medium bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full">React Native</span>
-                            <span class="px-3 py-1 text-xs font-medium bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full">Firebase</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Task Management App</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Cross-platform mobile application for team collaboration and project management.</p>
-                        <a href="#" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm group/link">
-                            View Project <i data-lucide="arrow-up-right" class="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300" data-category="design">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="http://static.photos/minimal/640x360/3" alt="Brand Identity Design" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="project-overlay absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 flex items-center justify-center gap-4">
-                            <a href="#" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors">
-                                <i data-lucide="external-link" class="w-5 h-5"></i>
-                            </a>
-                            <a href="#" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors">
-                                <i data-lucide="github" class="w-5 h-5"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 text-xs font-medium bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 rounded-full">Figma</span>
-                            <span class="px-3 py-1 text-xs font-medium bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full">UI/UX</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Brand Identity System</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Complete design system and brand guidelines for a tech startup including logo and assets.</p>
-                        <a href="#" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm group/link">
-                            View Project <i data-lucide="arrow-up-right" class="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
+                <!-- Project 2: Attendance-Leave-Payroll Portal -->
                 <div class="project-card group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300" data-category="web">
                     <div class="relative overflow-hidden h-48">
-                        <img src="http://static.photos/dashboard/640x360/4" alt="Analytics Dashboard" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        <img src="https://kredily.com/wp-content/uploads/2022/09/attendance-and-payroll-software-1024x536.png" alt="ALP - Attendance & Payroll System" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
                         <div class="project-overlay absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 flex items-center justify-center gap-4">
-                            <a href="#" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors">
+                            <button onclick="openAlpModal()" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors" title="View Details">
+                                <i data-lucide="eye" class="w-5 h-5"></i>
+                            </button>
+                            <a href="https://attendance-leave-payroll-portal.onrender.com/" target="_blank" rel="noopener noreferrer" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors" title="Live Demo">
                                 <i data-lucide="external-link" class="w-5 h-5"></i>
                             </a>
-                            <a href="#" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors">
+                            <a href="https://github.com/jacerivera07/Attendance-Leave-Payroll-Portal" target="_blank" rel="noopener noreferrer" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors" title="View Code">
                                 <i data-lucide="github" class="w-5 h-5"></i>
                             </a>
                         </div>
                     </div>
                     <div class="p-6">
                         <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">Vue.js</span>
-                            <span class="px-3 py-1 text-xs font-medium bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 rounded-full">D3.js</span>
+                            <span class="px-3 py-1 text-xs font-medium bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full">Django</span>
+                            <span class="px-3 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">REST API</span>
+                            <span class="px-3 py-1 text-xs font-medium bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full">JavaScript</span>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Analytics Dashboard</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Real-time data visualization dashboard with interactive charts and reporting features.</p>
-                        <a href="#" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm group/link">
-                            View Project <i data-lucide="arrow-up-right" class="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"></i>
-                        </a>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">ALP - Attendance, Leave & Payroll</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Comprehensive HR management system with role-based access control, attendance tracking, leave management, and payroll processing.</p>
+                        <div class="flex gap-3">
+                            <button onclick="openAlpModal()" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm group/link">
+                                View Details <i data-lucide="arrow-up-right" class="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"></i>
+                            </button>
+                            <a href="https://attendance-leave-payroll-portal.onrender.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-medium text-sm group/link">
+                                Live Demo <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
+                <!-- Project 3: AIDE-LLM -->
                 <div class="project-card group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300" data-category="web">
                     <div class="relative overflow-hidden h-48">
-                        <img src="http://static.photos/social/640x360/5" alt="Social Network" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        <img src="C:\Users\Pc\Downloads\Gemini_Generated_Image_p2zohbp2zohbp2zo.png" alt="AIDE-LLM Desktop IDE" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
                         <div class="project-overlay absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 flex items-center justify-center gap-4">
-                            <a href="#" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors">
-                                <i data-lucide="external-link" class="w-5 h-5"></i>
-                            </a>
-                            <a href="#" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors">
+                            <button onclick="openAideModal()" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors" title="View Details">
+                                <i data-lucide="eye" class="w-5 h-5"></i>
+                            </button>
+                            <a href="https://github.com/jacerivera07/AIDE" target="_blank" rel="noopener noreferrer" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors" title="View Code">
                                 <i data-lucide="github" class="w-5 h-5"></i>
                             </a>
                         </div>
                     </div>
                     <div class="p-6">
                         <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">Next.js</span>
-                            <span class="px-3 py-1 text-xs font-medium bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full">GraphQL</span>
+                            <span class="px-3 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full">Electron</span>
+                            <span class="px-3 py-1 text-xs font-medium bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full">AI/LLM</span>
+                            <span class="px-3 py-1 text-xs font-medium bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full">Ollama</span>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Social Network Platform</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Feature-rich social platform with real-time messaging, notifications, and content sharing.</p>
-                        <a href="#" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm group/link">
-                            View Project <i data-lucide="arrow-up-right" class="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"></i>
-                        </a>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">AIDE-LLM Desktop IDE</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Desktop IDE with Monaco editor and local AI assistance powered by Ollama. Features code generation, real-time execution, visual diff system, and multi-shell terminal support.</p>
+                        <button onclick="openAideModal()" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm group/link">
+                            View Details <i data-lucide="arrow-up-right" class="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"></i>
+                        </button>
                     </div>
                 </div>
-
-                <!-- Project 6 -->
-                <div class="project-card group bg-gray-50 dark:bg-gray-800/50 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300" data-category="design">
-                    <div class="relative overflow-hidden h-48">
-                        <img src="http://static.photos/website/640x360/6" alt="Portfolio Template" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="project-overlay absolute inset-0 bg-black/60 opacity-0 transition-opacity duration-300 flex items-center justify-center gap-4">
-                            <a href="#" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors">
-                                <i data-lucide="external-link" class="w-5 h-5"></i>
-                            </a>
-                            <a href="#" class="p-3 bg-white rounded-full hover:bg-blue-600 hover:text-white transition-colors">
-                                <i data-lucide="github" class="w-5 h-5"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex gap-2 mb-3">
-                            <span class="px-3 py-1 text-xs font-medium bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 rounded-full">Figma</span>
-                            <span class="px-3 py-1 text-xs font-medium bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 rounded-full">Web Design</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Portfolio Template</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Modern portfolio template design with dark mode support and smooth animations.</p>
-                        <a href="#" class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm group/link">
-                            View Project <i data-lucide="arrow-up-right" class="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-12">
-                <a href="#" class="inline-flex items-center gap-2 px-8 py-4 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white rounded-full font-medium transition-all">
-                    View All Projects
-                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
             </div>
         </div>
     </section>
@@ -404,7 +338,7 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full mb-4"></div>
-                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Have a project in mind? Let's work together to create something amazing.</p>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Fresh graduate eager to contribute and learn. Let's connect and explore opportunities together.</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -455,29 +389,24 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">First Name</label>
-                                <input type="text" required class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="John">
+                                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="John">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Last Name</label>
-                                <input type="text" required class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="Doe">
+                                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="Doe">
                             </div>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
-                            <input type="email" required class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="john@example.com">
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="john@example.com">
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Subject</label>
-                            <select class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all">
-                                <option>Project Inquiry</option>
-                                <option>Freelance Opportunity</option>
-                                <option>Collaboration</option>
-                                <option>Other</option>
-                            </select>
+                            <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all" placeholder="Subject of your message">
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
-                            <textarea rows="4" required class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none" placeholder="Tell me about your project..."></textarea>
+                            <textarea rows="4" id="message" name="message" required class="w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none" placeholder="Tell me about your project..."></textarea>
                         </div>
                         <button type="submit" class="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium rounded-lg transition-all transform hover:scale-[1.02] shadow-lg flex items-center justify-center gap-2">
                             Send Message
@@ -495,16 +424,13 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-1 md:col-span-2">
                     <span class="text-2xl font-bold gradient-text mb-4 block">A</span>
-                    <p class="text-gray-400 mb-4 max-w-sm">Building digital experiences that make a difference. Let's create something amazing together.</p>
+                    <p class="text-gray-400 mb-4 max-w-sm">Fresh graduate passionate about building innovative solutions. Open to opportunities and excited to grow in the tech industry.</p>
                     <div class="flex gap-4">
-                        <a href="#" class="p-2 bg-gray-800 rounded-lg hover:bg-blue-600 transition-colors">
+                        <a href="https://github.com/jacerivera07" target="_blank" class="p-2 bg-gray-800 rounded-lg hover:bg-blue-600 transition-colors">
                             <i data-lucide="github" class="w-5 h-5"></i>
                         </a>
-                        <a href="#" class="p-2 bg-gray-800 rounded-lg hover:bg-blue-600 transition-colors">
+                        <a href="https://www.linkedin.com/in/jace-ayson-rivera-b598353a8/" target="_blank" class="p-2 bg-gray-800 rounded-lg hover:bg-blue-600 transition-colors">
                             <i data-lucide="linkedin" class="w-5 h-5"></i>
-                        </a>
-                        <a href="#" class="p-2 bg-gray-800 rounded-lg hover:bg-blue-600 transition-colors">
-                            <i data-lucide="twitter" class="w-5 h-5"></i>
                         </a>
                     </div>
                 </div>
@@ -517,18 +443,10 @@
                         <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h4 class="font-bold mb-4">Services</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Web Development</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">UI/UX Design</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Mobile Apps</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Consulting</a></li>
-                    </ul>
-                </div>
+
             </div>
             <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-gray-400 text-sm">© 2024 Athriel Rivera. All rights reserved.</p>
+                <p class="text-gray-400 text-sm">© 2025 Athriel Rivera.</p>
                 <p class="text-gray-400 text-sm">Made with <i data-lucide="heart" class="w-4 h-4 inline text-red-500"></i> and lots of <i data-lucide="coffee" class="w-4 h-4 inline text-yellow-500"></i></p>
             </div>
         </div>
@@ -538,6 +456,702 @@
     <div id="toast" class="fixed bottom-4 right-4 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg transform translate-y-20 opacity-0 transition-all duration-300 z-50 flex items-center gap-2">
         <i data-lucide="check-circle" class="w-5 h-5"></i>
         <span>Message sent successfully!</span>
+    </div>
+
+    <!-- LB Portal Modal -->
+    <div id="lbModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4" onclick="closeLbModal(event)">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto shadow-2xl" onclick="event.stopPropagation()">
+            <!-- Modal Header -->
+            <div class="sticky top-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 p-6 flex justify-between items-center z-10">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">LB Portal</h2>
+                    <p class="text-gray-600 dark:text-gray-400">AI-Powered Liquidation and Reimbursement Management System</p>
+                </div>
+                <button onclick="closeLbModal()" class="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
+                    <i data-lucide="x" class="w-6 h-6 text-gray-600 dark:text-gray-400"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="p-6">
+                <!-- Live Demo Notice -->
+                <div class="mb-8 p-4 bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 rounded-r-lg">
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        <span class="font-bold">Live Demo Available:</span> This project is deployed and accessible at 
+                        <a href="https://liquidation-bot-portal.onrender.com/" target="_blank" rel="noopener noreferrer" class="text-green-600 dark:text-green-400 hover:underline font-medium">liquidation-bot-portal.onrender.com</a>
+                    </p>
+                </div>
+
+                <!-- Overview -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Overview</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                        LB Portal is a comprehensive web-based management system designed to streamline the process of submitting, tracking, and approving liquidation and reimbursement requests within organizations. The system leverages artificial intelligence through Google's Gemma 3 4B vision model to automatically extract data from receipt images, eliminating manual data entry and reducing processing time.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        The platform provides a dual-interface system: a user-friendly portal for employees to submit expense requests with multiple receipt uploads, and a powerful administrative dashboard for managers to review, approve, or reject submissions. All transactions are logged and tracked, providing complete transparency and accountability throughout the reimbursement lifecycle.
+                    </p>
+                </div>
+
+                <!-- Key Features -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Key Features</h3>
+                    
+                    <!-- User Features -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                            <i data-lucide="user" class="w-5 h-5 text-blue-600"></i>
+                            User Features
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+                                        <i data-lucide="upload" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Multi-Receipt Submission</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Upload and process multiple receipts in a single request.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
+                                        <i data-lucide="brain" class="w-5 h-5 text-purple-600 dark:text-purple-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">AI-Powered OCR</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Automatic data extraction from receipt images using Gemma 3 4B vision model.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
+                                        <i data-lucide="check-circle" class="w-5 h-5 text-green-600 dark:text-green-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Smart Data Validation</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Intelligent parsing of merchant names, items, quantities, prices, and totals.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded-lg">
+                                        <i data-lucide="edit" class="w-5 h-5 text-orange-600 dark:text-orange-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Edit & Review</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Review and modify extracted data before submission.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-cyan-100 dark:bg-cyan-900/30 rounded-lg">
+                                        <i data-lucide="zoom-in" class="w-5 h-5 text-cyan-600 dark:text-cyan-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Receipt Image Zoom</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Click to view receipt images in full resolution.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-pink-100 dark:bg-pink-900/30 rounded-lg">
+                                        <i data-lucide="history" class="w-5 h-5 text-pink-600 dark:text-pink-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Transaction History</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Track all submitted requests and their approval status.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Admin Features -->
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                            <i data-lucide="shield" class="w-5 h-5 text-green-600"></i>
+                            Admin Features
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
+                                        <i data-lucide="users-2" class="w-5 h-5 text-green-600 dark:text-green-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Employee Management</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">View all users with pending requests organized by employee.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+                                        <i data-lucide="file-search" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Request Review System</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Comprehensive review interface with all receipt details.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
+                                        <i data-lucide="check-square" class="w-5 h-5 text-purple-600 dark:text-purple-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Approve/Reject Actions</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Quick approval or rejection with instant database updates.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded-lg">
+                                        <i data-lucide="list" class="w-5 h-5 text-orange-600 dark:text-orange-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Transaction Logs</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Complete audit trail of all approved and rejected requests.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & OCR Technology -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">AI & OCR Technology</h3>
+                    <div class="p-6 bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-xl border border-purple-200 dark:border-purple-800">
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
+                                <i data-lucide="sparkles" class="w-8 h-8 text-purple-600 dark:text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Gemma 3 4B Vision Model</h4>
+                                <p class="text-gray-600 dark:text-gray-400 mb-3">
+                                    Powered by Google's Gemma 3 4B vision-language model via Ollama, the system can intelligently read and extract data directly from receipt images without traditional OCR engines.
+                                </p>
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                    <div class="text-center p-2 bg-white dark:bg-gray-800 rounded-lg">
+                                        <p class="text-xs text-gray-600 dark:text-gray-400">Merchant Detection</p>
+                                    </div>
+                                    <div class="text-center p-2 bg-white dark:bg-gray-800 rounded-lg">
+                                        <p class="text-xs text-gray-600 dark:text-gray-400">Item Extraction</p>
+                                    </div>
+                                    <div class="text-center p-2 bg-white dark:bg-gray-800 rounded-lg">
+                                        <p class="text-xs text-gray-600 dark:text-gray-400">Price Parsing</p>
+                                    </div>
+                                    <div class="text-center p-2 bg-white dark:bg-gray-800 rounded-lg">
+                                        <p class="text-xs text-gray-600 dark:text-gray-400">Total Calculation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Technology Stack</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <div class="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg text-center">
+                            <p class="font-medium text-green-700 dark:text-green-300">Django 5.2</p>
+                        </div>
+                        <div class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-center">
+                            <p class="font-medium text-blue-700 dark:text-blue-300">Python 3.14</p>
+                        </div>
+                        <div class="p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg text-center">
+                            <p class="font-medium text-purple-700 dark:text-purple-300">Gemma 3 4B</p>
+                        </div>
+                        <div class="p-3 bg-orange-50 dark:bg-orange-900/20 rounded-lg text-center">
+                            <p class="font-medium text-orange-700 dark:text-orange-300">Ollama</p>
+                        </div>
+                        <div class="p-3 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg text-center">
+                            <p class="font-medium text-cyan-700 dark:text-cyan-300">SQLite</p>
+                        </div>
+                        <div class="p-3 bg-pink-50 dark:bg-pink-900/20 rounded-lg text-center">
+                            <p class="font-medium text-pink-700 dark:text-pink-300">JavaScript</p>
+                        </div>
+                        <div class="p-3 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg text-center">
+                            <p class="font-medium text-indigo-700 dark:text-indigo-300">HTML5/CSS3</p>
+                        </div>
+                        <div class="p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg text-center">
+                            <p class="font-medium text-yellow-700 dark:text-yellow-300">Gunicorn</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Highlights -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Technical Highlights</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="p-4 border-l-4 border-blue-500 bg-gray-50 dark:bg-gray-800 rounded-r-lg">
+                            <h5 class="font-bold text-gray-900 dark:text-white mb-1">Secure Authentication</h5>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Role-based access control with CSRF protection</p>
+                        </div>
+                        <div class="p-4 border-l-4 border-green-500 bg-gray-50 dark:bg-gray-800 rounded-r-lg">
+                            <h5 class="font-bold text-gray-900 dark:text-white mb-1">Image Processing</h5>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Automatic encoding and optimization for OCR</p>
+                        </div>
+                        <div class="p-4 border-l-4 border-purple-500 bg-gray-50 dark:bg-gray-800 rounded-r-lg">
+                            <h5 class="font-bold text-gray-900 dark:text-white mb-1">AJAX Operations</h5>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Asynchronous processing for smooth UX</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex gap-4 justify-center pt-4 border-t border-gray-200 dark:border-gray-800">
+                    <a href="https://liquidation-bot-portal.onrender.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-all">
+                        <i data-lucide="external-link" class="w-5 h-5"></i>
+                        View Live Demo
+                    </a>
+                    <a href="https://github.com/jacerivera07/Liquidation-Bot-Portal" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all">
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                        View on GitHub
+                    </a>
+                    <button onclick="closeLbModal()" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg font-medium transition-all">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ALP Portal Modal -->
+    <div id="alpModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4" onclick="closeAlpModal(event)">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto shadow-2xl" onclick="event.stopPropagation()">
+            <!-- Modal Header -->
+            <div class="sticky top-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 p-6 flex justify-between items-center z-10">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">ALP Portal</h2>
+                    <p class="text-gray-600 dark:text-gray-400">Comprehensive HR Management System for Attendance, Leave, and Payroll</p>
+                </div>
+                <button onclick="closeAlpModal()" class="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
+                    <i data-lucide="x" class="w-6 h-6 text-gray-600 dark:text-gray-400"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="p-6">
+                <!-- Live Demo Notice -->
+                <div class="mb-8 p-4 bg-green-50 dark:bg-green-900/20 border-l-4 border-green-500 rounded-r-lg">
+                    <p class="text-sm text-gray-700 dark:text-gray-300">
+                        <span class="font-bold">Live Demo Available:</span> This project is deployed and accessible at 
+                        <a href="https://attendance-leave-payroll-portal.onrender.com/" target="_blank" rel="noopener noreferrer" class="text-green-600 dark:text-green-400 hover:underline font-medium">attendance-leave-payroll-portal.onrender.com</a>
+                    </p>
+                </div>
+
+                <!-- Overview -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Overview</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                        ALP Portal is a full-stack web-based Human Resources management system designed to streamline employee attendance tracking, leave management, and payroll processing. Built with Django REST Framework and modern JavaScript, the system provides role-based access control with separate interfaces for administrators and employees.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        The platform features real-time attendance monitoring, automated payroll calculations, leave request workflows, and comprehensive analytics dashboards with interactive charts and reports. The system implements a pending employee approval workflow where new signups require administrator review and configuration before activation.
+                    </p>
+                </div>
+
+                <!-- Key Features -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Key Features</h3>
+                    
+                    <!-- Admin Features -->
+                    <div class="mb-6">
+                        <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                            <i data-lucide="shield" class="w-5 h-5 text-blue-600"></i>
+                            Admin Dashboard
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+                                        <i data-lucide="users" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Employee Management</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">View, edit, and manage all employees with filtering, search, and status tracking.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
+                                        <i data-lucide="clock" class="w-5 h-5 text-green-600 dark:text-green-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Attendance Tracking</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Mark daily attendance, clock in/out tracking, and automatic working hours calculation.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
+                                        <i data-lucide="calendar" class="w-5 h-5 text-purple-600 dark:text-purple-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Leave Management</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Review and approve/reject leave requests with automatic leave day calculations.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded-lg">
+                                        <i data-lucide="dollar-sign" class="w-5 h-5 text-orange-600 dark:text-orange-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Payroll Processing</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Automated salary calculations with allowances, deductions, and payslip generation.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-cyan-100 dark:bg-cyan-900/30 rounded-lg">
+                                        <i data-lucide="bar-chart-3" class="w-5 h-5 text-cyan-600 dark:text-cyan-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Analytics & Reports</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Interactive charts with attendance trends, department distribution, and payroll analytics.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-yellow-100 dark:bg-yellow-900/30 rounded-lg">
+                                        <i data-lucide="user-check" class="w-5 h-5 text-yellow-600 dark:text-yellow-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Pending Approvals</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Visual notifications for pending employee signups requiring admin setup.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Employee Features -->
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                            <i data-lucide="user" class="w-5 h-5 text-green-600"></i>
+                            Employee Dashboard
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
+                                        <i data-lucide="layout-dashboard" class="w-5 h-5 text-green-600 dark:text-green-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">Personal Dashboard</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">View personal statistics with restricted access to own data only.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+                                        <i data-lucide="clock-3" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">My Attendance</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Track personal attendance history and clock in/out times.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
+                                        <i data-lucide="calendar-check" class="w-5 h-5 text-purple-600 dark:text-purple-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">My Leaves</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Submit leave requests and track application status.</p>
+                            </div>
+                            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded-lg">
+                                        <i data-lucide="file-text" class="w-5 h-5 text-orange-600 dark:text-orange-400"></i>
+                                    </div>
+                                    <h5 class="font-bold text-gray-900 dark:text-white">My Payslips</h5>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">View detailed salary statements with earnings and deductions breakdown.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pending Employee Workflow -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Pending Employee Workflow</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center text-blue-600 dark:text-blue-400 font-bold">1</div>
+                            <div>
+                                <h5 class="font-bold text-gray-900 dark:text-white mb-1">New Employee Signup</h5>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Employees create accounts with basic information</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-yellow-100 dark:bg-yellow-900/30 rounded-full flex items-center justify-center text-yellow-600 dark:text-yellow-400 font-bold">2</div>
+                            <div>
+                                <h5 class="font-bold text-gray-900 dark:text-white mb-1">Pending Status & Admin Notification</h5>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">New accounts set to "Pending" with visual badge notification for admin</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center text-purple-600 dark:text-purple-400 font-bold">3</div>
+                            <div>
+                                <h5 class="font-bold text-gray-900 dark:text-white mb-1">Admin Setup</h5>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Admin configures department, position, salary, and work schedule</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center text-green-600 dark:text-green-400 font-bold">4</div>
+                            <div>
+                                <h5 class="font-bold text-gray-900 dark:text-white mb-1">Account Activation & Portal Access</h5>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Admin activates account, employee can login and access dashboard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Technology Stack</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <div class="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg text-center">
+                            <p class="font-medium text-green-700 dark:text-green-300">Django 4.2</p>
+                        </div>
+                        <div class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-center">
+                            <p class="font-medium text-blue-700 dark:text-blue-300">DRF</p>
+                        </div>
+                        <div class="p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg text-center">
+                            <p class="font-medium text-purple-700 dark:text-purple-300">JavaScript</p>
+                        </div>
+                        <div class="p-3 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg text-center">
+                            <p class="font-medium text-cyan-700 dark:text-cyan-300">Chart.js</p>
+                        </div>
+                        <div class="p-3 bg-pink-50 dark:bg-pink-900/20 rounded-lg text-center">
+                            <p class="font-medium text-pink-700 dark:text-pink-300">Tailwind CSS</p>
+                        </div>
+                        <div class="p-3 bg-orange-50 dark:bg-orange-900/20 rounded-lg text-center">
+                            <p class="font-medium text-orange-700 dark:text-orange-300">SQLite</p>
+                        </div>
+                        <div class="p-3 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg text-center">
+                            <p class="font-medium text-indigo-700 dark:text-indigo-300">Token Auth</p>
+                        </div>
+                        <div class="p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg text-center">
+                            <p class="font-medium text-yellow-700 dark:text-yellow-300">Gunicorn</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Architecture Highlights</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="p-4 border-l-4 border-blue-500 bg-gray-50 dark:bg-gray-800 rounded-r-lg">
+                            <h5 class="font-bold text-gray-900 dark:text-white mb-1">REST API Architecture</h5>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">API-driven frontend with JSON data format</p>
+                        </div>
+                        <div class="p-4 border-l-4 border-green-500 bg-gray-50 dark:bg-gray-800 rounded-r-lg">
+                            <h5 class="font-bold text-gray-900 dark:text-white mb-1">Token Authentication</h5>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Stateless authentication with DRF tokens</p>
+                        </div>
+                        <div class="p-4 border-l-4 border-purple-500 bg-gray-50 dark:bg-gray-800 rounded-r-lg">
+                            <h5 class="font-bold text-gray-900 dark:text-white mb-1">Role-Based Access</h5>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Separate admin and employee permissions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex gap-4 justify-center pt-4 border-t border-gray-200 dark:border-gray-800">
+                    <a href="https://attendance-leave-payroll-portal.onrender.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-all">
+                        <i data-lucide="external-link" class="w-5 h-5"></i>
+                        View Live Demo
+                    </a>
+                    <a href="https://github.com/jacerivera07/Attendance-Leave-Payroll-Portal" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all">
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                        View on GitHub
+                    </a>
+                    <button onclick="closeAlpModal()" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg font-medium transition-all">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AIDE-LLM Modal -->
+    <div id="aideModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4" onclick="closeAideModal(event)">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto shadow-2xl" onclick="event.stopPropagation()">
+            <!-- Modal Header -->
+            <div class="sticky top-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 p-6 flex justify-between items-center z-10">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <h2 class="text-3xl font-bold text-gray-900 dark:text-white">AIDE-LLM Desktop IDE</h2>
+                        <span class="px-3 py-1 text-sm font-medium bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full border border-yellow-300 dark:border-yellow-700">Prototype</span>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400">AI-Assisted Integrated Development Environment</p>
+                </div>
+                <button onclick="closeAideModal()" class="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors">
+                    <i data-lucide="x" class="w-6 h-6 text-gray-600 dark:text-gray-400"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="p-6">
+                <!-- Screenshots Gallery -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Screenshots</h3>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="relative group">
+                            <img src="aide photos/aide dashboard.png" alt="AIDE Dashboard" class="w-full rounded-lg border border-gray-200 dark:border-gray-700 cursor-pointer hover:shadow-xl transition-shadow" onclick="openImageModal(this.src)">
+                            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Main Dashboard - Code editor with AI assistance panel</p>
+                        </div>
+                        <div class="relative group">
+                            <img src="aide photos/aide prompt.png" alt="AIDE AI Prompt" class="w-full rounded-lg border border-gray-200 dark:border-gray-700 cursor-pointer hover:shadow-xl transition-shadow" onclick="openImageModal(this.src)">
+                            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">AI Prompt Interface - Natural language code generation</p>
+                        </div>
+                        <div class="relative group">
+                            <img src="aide photos/aide output.png" alt="AIDE Output Panel" class="w-full rounded-lg border border-gray-200 dark:border-gray-700 cursor-pointer hover:shadow-xl transition-shadow" onclick="openImageModal(this.src)">
+                            <p class="text-sm text-gray-600 dark:text-gray-400 mt-2">Output Panel - Real-time code execution results</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Overview -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Overview</h3>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                        AIDE-LLM is a desktop IDE application that brings AI-powered coding assistance directly to your local machine. Built with Electron and React, it combines a professional code editor with intelligent AI features that run entirely offline through Ollama integration.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                        The project merges traditional IDE functionality with modern AI capabilities, allowing developers to write, execute, and debug code while getting real-time AI assistance - all without sending code to external servers. It's designed for privacy-conscious developers who want AI help without compromising their code security.
+                    </p>
+                    <div class="p-4 bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 rounded-r-lg">
+                        <p class="text-sm text-gray-700 dark:text-gray-300">
+                            <span class="font-bold">Note:</span> This is a prototype project developed to explore AI-assisted development workflows and demonstrate integration of local LLM capabilities with traditional IDE features.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Key Features -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Key Features</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+                                    <i data-lucide="code-2" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+                                </div>
+                                <h4 class="font-bold text-gray-900 dark:text-white">Smart Code Editor</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Monaco Editor with VS Code-like experience, multi-language syntax highlighting, and IntelliSense.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded-lg">
+                                    <i data-lucide="brain" class="w-5 h-5 text-purple-600 dark:text-purple-400"></i>
+                                </div>
+                                <h4 class="font-bold text-gray-900 dark:text-white">AI-Powered Assistant</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Local AI processing via Ollama with DeepSeek-R1 model for code generation and debugging.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
+                                    <i data-lucide="git-compare" class="w-5 h-5 text-green-600 dark:text-green-400"></i>
+                                </div>
+                                <h4 class="font-bold text-gray-900 dark:text-white">Visual Diff System</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Real-time visualization of AI suggestions with color-coded changes and accept/reject controls.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded-lg">
+                                    <i data-lucide="play" class="w-5 h-5 text-orange-600 dark:text-orange-400"></i>
+                                </div>
+                                <h4 class="font-bold text-gray-900 dark:text-white">Interactive Execution</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Run code directly with support for Python, JavaScript, TypeScript, and interactive input.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="p-2 bg-cyan-100 dark:bg-cyan-900/30 rounded-lg">
+                                    <i data-lucide="terminal" class="w-5 h-5 text-cyan-600 dark:text-cyan-400"></i>
+                                </div>
+                                <h4 class="font-bold text-gray-900 dark:text-white">Multi-Shell Terminal</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Integrated terminal with PowerShell, CMD, and Bash support for seamless workflow.</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <div class="flex items-center gap-3 mb-2">
+                                <div class="p-2 bg-red-100 dark:bg-red-900/30 rounded-lg">
+                                    <i data-lucide="shield-check" class="w-5 h-5 text-red-600 dark:text-red-400"></i>
+                                </div>
+                                <h4 class="font-bold text-gray-900 dark:text-white">Privacy-Focused</h4>
+                            </div>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">All AI processing happens locally - your code never leaves your machine.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Technology Stack</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <div class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-center">
+                            <p class="font-medium text-blue-700 dark:text-blue-300">Electron 27</p>
+                        </div>
+                        <div class="p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg text-center">
+                            <p class="font-medium text-purple-700 dark:text-purple-300">React 19</p>
+                        </div>
+                        <div class="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg text-center">
+                            <p class="font-medium text-green-700 dark:text-green-300">Monaco Editor</p>
+                        </div>
+                        <div class="p-3 bg-orange-50 dark:bg-orange-900/20 rounded-lg text-center">
+                            <p class="font-medium text-orange-700 dark:text-orange-300">Ollama</p>
+                        </div>
+                        <div class="p-3 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg text-center">
+                            <p class="font-medium text-cyan-700 dark:text-cyan-300">Node.js</p>
+                        </div>
+                        <div class="p-3 bg-pink-50 dark:bg-pink-900/20 rounded-lg text-center">
+                            <p class="font-medium text-pink-700 dark:text-pink-300">Vite</p>
+                        </div>
+                        <div class="p-3 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg text-center">
+                            <p class="font-medium text-indigo-700 dark:text-indigo-300">DeepSeek-R1</p>
+                        </div>
+                        <div class="p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg text-center">
+                            <p class="font-medium text-yellow-700 dark:text-yellow-300">TypeScript</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- System Requirements -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">System Requirements</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <h4 class="font-bold text-gray-900 dark:text-white mb-2">Minimum</h4>
+                            <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                                <li>• OS: Windows 10/11, macOS 10.14+, Linux</li>
+                                <li>• RAM: 4GB (8GB recommended)</li>
+                                <li>• Storage: 2GB free space</li>
+                                <li>• CPU: x64 processor</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                            <h4 class="font-bold text-gray-900 dark:text-white mb-2">For AI Features</h4>
+                            <ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                                <li>• RAM: 8GB+ (for Ollama and AI model)</li>
+                                <li>• Storage: Additional 2GB for AI models</li>
+                                <li>• Internet: Only for initial Ollama setup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex gap-4 justify-center pt-4 border-t border-gray-200 dark:border-gray-800">
+                    <a href="https://github.com/jacerivera07/AIDE" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-all">
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                        View on GitHub
+                    </a>
+                    <button onclick="closeAideModal()" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg font-medium transition-all">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Zoom Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black/95 z-[60] hidden flex items-center justify-center p-4" onclick="closeImageModal()">
+        <button onclick="closeImageModal()" class="absolute top-4 right-4 p-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors">
+            <i data-lucide="x" class="w-6 h-6 text-white"></i>
+        </button>
+        <img id="zoomedImage" src="" alt="Zoomed screenshot" class="max-w-full max-h-full object-contain rounded-lg">
     </div>
 
     <script src="script.js"></script>
